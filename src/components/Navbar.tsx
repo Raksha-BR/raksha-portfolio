@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#" className="logo">
-          RB<span>.</span>
+          RBR<span></span>
         </a>
 
         {/* Desktop navigation */}

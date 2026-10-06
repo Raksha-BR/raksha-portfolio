@@ -551,21 +551,16 @@ a {
 
 .certifications-grid {
   display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .certification-card {
   overflow: hidden;
-
   border: 1px solid var(--border);
-
-  border-radius: 24px;
-
+  border-radius: 16px;
   background: var(--card);
-
   transition:
     transform 0.25s ease,
     border-color 0.25s ease;
@@ -573,111 +568,75 @@ a {
 
 .certification-card:hover {
   transform: translateY(-4px);
-
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .certificate-image-wrapper {
+  width: 100%;
   aspect-ratio: 16 / 10;
-
   overflow: hidden;
-
   background: #111;
-
-  border-bottom: 1px solid var(--border);
 }
 
 .certificate-image {
   width: 100%;
   height: 100%;
-
-  object-fit: cover;
-
   display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover .certificate-image {
+  transform: scale(1.03);
 }
 
 .certificate-content {
-  padding: 28px;
+  padding: 1.5rem;
+}
+
+.certificate-type {
+  margin: 0 0 0.5rem;
+  color: var(--subtle);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .certificate-content h3 {
-  margin: 10px 0;
-
-  font-size: 24px;
+  margin: 0;
+  font-size: 1.15rem;
 }
 
 .certificate-date {
+  margin: 0.5rem 0 0;
   color: var(--subtle);
-
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .certificate-skills {
   display: flex;
-
   flex-wrap: wrap;
-
-  gap: 8px;
-
-  margin-top: 20px;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .certificate-skills span {
-  padding: 7px 11px;
-
+  padding: 0.35rem 0.6rem;
   border: 1px solid var(--border);
-
   border-radius: 999px;
-
   color: var(--muted);
-
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .certificate-link {
   display: inline-flex;
-
   align-items: center;
-
-  gap: 7px;
-
-  margin-top: 24px;
-
-  color: white;
-
-  font-size: 14px;
-}
-
-.certification-empty {
-  display: flex;
-
-  align-items: center;
-
-  gap: 20px;
-
-  padding: 35px;
-
-  border: 1px dashed #333;
-
-  border-radius: 20px;
-
-  color: var(--subtle);
-}
-
-.certification-empty h3 {
-  margin: 0 0 8px;
-
-  color: white;
-
-  font-size: 20px;
-}
-
-.certification-empty p {
-  margin: 0;
-
-  color: var(--subtle);
-
-  line-height: 1.6;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--foreground);
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 /* ---------------- RESUME ---------------- */

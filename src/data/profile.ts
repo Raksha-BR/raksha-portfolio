@@ -13,5 +13,5 @@ export const profile = {
 
   email: "rakshabrj@gmail.com",
 
-  resume: "https://drive.google.com/drive/folders/1KMY03CxHAHt_vf7O11Aq7VSJoVT7ydel?usp=sharing",
+  resume: "/resume/RakshaBR_resume.pdf",
 };

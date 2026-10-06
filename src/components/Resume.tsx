@@ -20,7 +20,7 @@ export default function Resume() {
         </div>
 
         <a
-          href="/resume/Raksha-BR-Resume.pdf"
+          href="/resume/RakshaBR_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button primary"

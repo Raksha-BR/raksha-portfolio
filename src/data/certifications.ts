@@ -35,7 +35,7 @@ export const certifications: Certification[] = [
   {
     title: "C#",
     issuer: "SoloLearn",
-    image: "/certificates/Intro_C#.jpg",
+    image: "/certificates/Intro_CSharp.jpg",
     skills: ["C#", "Programming"],
   },
   {
